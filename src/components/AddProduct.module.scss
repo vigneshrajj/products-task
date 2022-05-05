@@ -1,0 +1,50 @@
+.formContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    width: 70vw;
+    margin: 0 auto 2rem auto;
+}
+.label {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    & span {
+        color: #8f8f8f;
+        font-size: 0.8rem;
+    }
+}
+.inputField, .textArea {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.8rem;
+}
+.textArea {
+    resize: vertical;
+    max-height: 5rem;
+    min-height: 4rem;
+}
+.fileUpload {
+    border: 1px solid rgba(145, 145, 145, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > p {
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 1.1rem;
+        overflow: hidden;
+        width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+    }
+}
+.errorMsg {
+    color: red;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+.addBtn {
+    width: 150px;
+}
